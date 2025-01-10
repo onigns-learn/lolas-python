@@ -10,11 +10,17 @@
 
 print("I am a Greeting Generator")
 
+# Ask for user name
 name = input("Enter your name: ")
+
+# Ask for user favourite number and convert to integer
 fav_number = int(input("Enter your favourite number: "))
 
+# List of greetings
 greetings = ["Hello", "Hi", "Hey", "Greetings"]
-
+    
+# Select greeting based on the favorite number
 selected_greeting = greetings[fav_number % len(greetings)]
 
-print(selected_greeting, name, "! It's nice to meet you")
+# Print the final greeting
+print(f"{selected_greeting} {name}! It's nice to meet you.")
